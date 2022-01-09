@@ -3003,7 +3003,6 @@ input, select, textarea {
 				-ms-flex-wrap: wrap;
 				flex-wrap: wrap;
 				margin: 0 0 2em 0;
-				border: 1px solid green;
 			}
 
 				.blog-icons > div {
@@ -3012,14 +3011,12 @@ input, select, textarea {
 					border-radius: 5px;
 					margin: 0;
 					width: calc(50%);
-					border: 5px solid yellow;
 				}
 
 
 
 					.blog-icons div:nth-child(2n) {
 						margin: 0;
-						border: 1px solid blue;
 					}
 
 					.blog-icons div .image {
@@ -3030,13 +3027,11 @@ input, select, textarea {
 						margin-top: -1.75em;
 						position: relative;
 						width: calc(100% + 3.5em);
-						border: 5px solid red;
 					}
 
 						.blog-icons div .image img {
 							border-radius: 5px 5px 0 0;
 							width: 100%;
-							border: 1px solid white;
 						}
 
 				@media screen and (max-width: 980px) {
