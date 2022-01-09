@@ -5,6 +5,7 @@
     <title>example</title>
     <link rel="stylesheet" href="/assets/css/main.css">
 		<noscript><link rel="stylesheet" href="/assets/css/noscript.css"/></noscript>
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
     <header id="header" class="alt">
@@ -191,6 +192,20 @@
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
+
+
+
+    <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 
   </body>
 </html>

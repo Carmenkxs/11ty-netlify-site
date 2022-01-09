@@ -5,6 +5,7 @@
     <title>6 months as a Product manager</title>
     <link rel="stylesheet" href="/assets/css/main.css">
 		<noscript><link rel="stylesheet" href="/assets/css/noscript.css"/></noscript>
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
     <header id="header" class="alt">
@@ -45,7 +46,7 @@
 				<h1 class="major">6 months as a Product manager</h1>
 				<div class="box alt">
 					<div class="row gtr-uniform">
-						<div class="col-12"><span class="image fit"><img src="/assets/blog/pic02.jpg" alt="this is an image" />caption</span></div>
+						<div class="col-12"><span class="image fit"><img src="/assets/blog/pexels-yan-krukov-7640830.jpg" alt="this is an image" />caption</span></div>
 					</div>
 				</div>
 
@@ -354,6 +355,20 @@ Aside from the improving soft skills that I mentioned, I am also trying to fill 
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
+
+
+
+    <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 
   </body>
 </html>
