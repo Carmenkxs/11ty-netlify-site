@@ -1,10 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>example</title>
     <link rel="stylesheet" href="/assets/css/main.css">
-    <noscript><link rel="stylesheet" href="/assets/css/noscript.css"/></noscript>
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css"/></noscript>
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
     <header id="header">
@@ -33,8 +35,8 @@
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
 
-
-		<div id="page-wrapper">
+    <main>
+    		<div id="page-wrapper">
 		<section id="wrapper">
 			<header>
 				<div class="inner">
@@ -47,25 +49,6 @@
 					<section class= "blog-icons">
 
 							<div>
-								<a href="/blogs/2021-12-25-deep-work/" class="image"><img src="/assets/blog/pic05.jpg" alt="this is an image" /></a>
-							</div>
-							<div>
-								<h3 class="major">Deep work</h3>
-								<p>Dec 25, 2021</p>
-								<p>Deep Work</p>
-								<a href="/blogs/2021-12-25-deep-work/" class="special">Continue reading</a>
-							</div>
-					</section>
-
-				</div>
-			</div>
-
-			<div class="wrapper">
-				<div class="inner">
-
-					<section class= "blog-icons">
-
-							<div>
 								<a href="/blog/2021-12-25-deep-work/" class="image"><img src="/assets/blog/pic05.jpg" alt="this is an image" /></a>
 							</div>
 							<div>
@@ -73,25 +56,6 @@
 								<p>Dec 25, 2021</p>
 								<p>Deep Work</p>
 								<a href="/blog/2021-12-25-deep-work/" class="special">Continue reading</a>
-							</div>
-					</section>
-
-				</div>
-			</div>
-
-			<div class="wrapper">
-				<div class="inner">
-
-					<section class= "blog-icons">
-
-							<div>
-								<a href="/blogs/2021-12-23-6months-as-a-pm/" class="image"><img src="/assets/blog/pexels-yan-krukov-7640830.jpg" alt="this is an image" /></a>
-							</div>
-							<div>
-								<h3 class="major">6 months as a Product manager</h3>
-								<p>Dec 23, 2021</p>
-								<p>After 6 months as a Product Manager, I wanted to reflect on a few things. Why the career switch, how I got into the role and how I feel about the role so far.</p>
-								<a href="/blogs/2021-12-23-6months-as-a-pm/" class="special">Continue reading</a>
 							</div>
 					</section>
 
@@ -141,7 +105,16 @@
 			</section>
 		</div>
 
-		<section id="footer">
+<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+    </main>
+    <section id="footer">
   <div class="inner">
     <h2 class="major">Get in touch</h2>
     <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
@@ -190,5 +163,18 @@
   <script src="assets/js/main.js"></script>
 
 
-	</body>
+
+    <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+
+  </body>
 </html>

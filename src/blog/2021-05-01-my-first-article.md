@@ -1,6 +1,6 @@
 ---
 title: My First Article
-author: Kevin Powell
+author: Carmen Kung
 date: 2021-05-01
 tags: post
 image: /assets/blog/pic03.jpg
