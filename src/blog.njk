@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <noscript><link rel="stylesheet" href="/assets/css/noscript.css"/></noscript>
+  </head>
+  <body>
+    {% include 'blogheader.njk' %}
+
+		<div id="page-wrapper">
+		<section id="wrapper">
+			<header>
+				<div class="inner">
+					<h2>Blog</h2>
+					<p>Product Management and cultural experiences as an Asian in the West.</p>
+				</div>
+			</header>
+
+		{%- for post in collections.post | reverse -%}
+
+			<div class="wrapper">
+				<div class="inner">
+
+					<section class= "blog-icons">
+
+							<div>
+								<a href="{{ post.url }}" class="image"><img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" /></a>
+							</div>
+							<div>
+								<h3 class="major">{{ post.data.title }}</h3>
+								<p>{{ post.data.date | postDate }}</p>
+								<p>{{ post.data.description }}</p>
+								<a href="{{ post.url }}" class="special">Continue reading</a>
+							</div>
+					</section>
+
+				</div>
+			</div>
+
+			{% endfor %}
+
+			</section>
+		</div>
+
+		{% include 'footer.njk' %}
+
+	</body>
+</html>

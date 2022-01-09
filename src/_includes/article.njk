@@ -1,0 +1,21 @@
+---
+layout: 'base.njk'
+---
+
+<section id="wrapper">
+
+	<!-- Content -->
+		<div class="wrapper">
+			<div class="inner">
+
+				<h1 class="major">{{ title }}</h1>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-12"><span class="image fit"><img src="{{ image }}" alt="{{ imageAlt }}" />caption</span></div>
+					</div>
+				</div>
+
+				{{ content | safe }}
+			</div>
+	</div>
+</section>
