@@ -125,16 +125,15 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: #ffffff;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 16px;
+		font-size: 16.5pt;
 		font-weight: 300;
 		line-height: 1.65;
 	}
 
-/* this only applies up til 1680px onwards */
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
-				font-size: 2em;
+				font-size: 13pt;
 			}
 
 		}
@@ -142,7 +141,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 1em;
+				font-size: 12pt;
 			}
 
 		}
@@ -150,7 +149,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			body, input, select, textarea {
-				font-size: 1.5em;
+				font-size: 12pt;
 			}
 
 		}
@@ -158,7 +157,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			body, input, select, textarea {
-				font-size: 1.5em;
+				font-size: 12pt;
 			}
 
 		}
@@ -166,7 +165,7 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			body, input, select, textarea {
-				font-size: 1.5em;
+				font-size: 12pt;
 			}
 
 		}
@@ -274,10 +273,6 @@ input, select, textarea {
 			padding-bottom: 1em;
 			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 		}
-
-	h1 {
-		font-size: 2em;
-	}
 
 	h2 {
 		font-size: 1.2em;
@@ -2994,89 +2989,6 @@ input, select, textarea {
 
 		}
 
-		/* blog-icons */
-
-			.blog-icons {
-				display: -moz-flex;
-				display: -webkit-flex;
-				display: -ms-flex;
-				display: flex;
-				flex-direction:
-				-moz-flex-wrap: wrap;
-				-webkit-flex-wrap: wrap;
-				-ms-flex-wrap: wrap;
-				flex-wrap: wrap;
-				margin: 0 0 2em 0;
-			}
-
-				.blog-icons > div {
-					padding: 1.75em 1.75em 0.1em 1.75em ;
-					background-color: #353849;
-					border-radius: 5px;
-					margin: 0;
-					width: calc(50%);
-				}
-
-
-
-					.blog-icons div:nth-child(2n) {
-						margin: 0;
-					}
-
-					.blog-icons div .image {
-						border-radius: 5px 5px 0 0;
-						display: block;
-						margin-bottom: 1.75em;
-						margin-left: -1.75em;
-						margin-top: -1.75em;
-						position: relative;
-						width: calc(100% + 3.5em);
-					}
-
-						.blog-icons div .image img {
-							border-radius: 5px 5px 0 0;
-							width: 100%;
-						}
-
-				@media screen and (max-width: 980px) {
-
-					.blog-icons div {
-						margin: 1em 2em 1em 0;
-						width: calc(50% - 1em);
-					}
-
-				}
-
-				@media screen and (max-width: 736px) {
-
-					.blog-icons div {
-						padding: 1.5em 1.5em 0.1em 1.5em ;
-						margin: 0.875em 1.75em 0.875em 0;
-						width: calc(50% - 0.875em - 1px);
-					}
-
-						.blog-icons div.image {
-							margin-bottom: 1.5em;
-							margin-left: -1.5em;
-							margin-top: -1.5em;
-							width: calc(100% + 3em);
-						}
-
-				}
-
-				@media screen and (max-width: 480px) {
-
-					.blog-icons {
-						display: block;
-					}
-
-					.blog-icons > div {
-						width: 100%;
-						margin: 0 0 2em 0 !important;
-					}
-
-				}
-
 /* Features */
 
 	.features {
@@ -3144,7 +3056,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 360px) {
+		@media screen and (max-width: 480px) {
 
 			.features {
 				display: block;
@@ -3644,7 +3556,6 @@ input, select, textarea {
 			margin: 0 auto;
 			width: 55em;
 		}
-
 
 		#wrapper > header h2 {
 			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
