@@ -1,0 +1,106 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+h1 {
+  padding: 10vh 0 0 0;
+  text-align: center;
+  font-weight: 200;
+}
+
+body {
+  background-image: linear-gradient(-90deg,rgb(116,107,128),rgb(160,215,255));
+  color:white;
+  min-height: 100vh;
+  font-family: Roboto;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.background {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.calcBody {
+  display: grid;
+  padding: 10px;
+  background-image: radial-gradient(circle at top right,rgb(52, 113, 156) 0%,rgb(14,3,48) 40%);
+  grid-template-columns: repeat(4,60px);
+  grid-template-rows: minmax(150px,auto) repeat(5,50px);
+  border-radius: 20px;
+}
+
+.display {
+  padding: 10px;
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.display .previousInputs {
+  color: lightgray;
+  font-size: 1.5rem;
+}
+
+.display .currentInputs {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.calcBody > button {
+  font-size: 1rem;
+  margin: 4px;
+  color: rgb(41,168,255);
+  border-radius: 12px;
+  background-color: rgb(48,49,54);
+  border: none;
+  
+}
+
+.calcBody > .operationButton {
+  font-size: 1.3rem;
+  background-color: rgb(0,93,178);
+}
+
+.calcBody > .largeButton {
+  grid-column: span 2;
+}
+
+#equalsButton {
+  background-color: rgb(25,145,255);
+  color: white;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
